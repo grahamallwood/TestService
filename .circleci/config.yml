@@ -6,14 +6,5 @@ jobs:
     steps:
       - checkout
       - run:
-          name: Current directory
-          command: pwd
-      - run:
-          name: Directory listing
-          command: ls
-      - run:
-          name: Greeting
-          command: echo Hello, world.
-      - run:
-          name: Print the Current dotnet version
-          command: dotnet --version
+          name: Build
+          command: dotnet build
