@@ -6,6 +6,9 @@ jobs:
     steps:
       - checkout
       - run:
+        name: Current directory
+        command: pwd
+      - run:
           name: Directory listing
           command: ls
       - run:
